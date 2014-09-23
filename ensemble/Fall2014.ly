@@ -159,6 +159,27 @@ c2\upbow d\>\downbow < d g,> r4 d,4\pDolceDynamic^"pizz."
 }
 
 %{
+
+\bookpart {
+
+global = {
+\time 3\4 \tempo 4 = 76
+\key c\major
+}
+
+vcI = \relative c‘ {
+c4 (g) r g (e) r g ( f e ) g ( f) ¦
+d' (b) r f ( e d) f (e) r 
+\bar ":¦"
+%9
+\mark \default
+r4 r d,\p r r g r c (a) b (a)
+
+c4 ( g) r4 g (e) r g ( f8 g f e) g4 (f ) r4 ¦
+d‘4 (b) r b (g) r f (e8 f e d) f4(e) r4¦
+
+}
+
 \score {
   \relative c' { \clef "bass" \key c \major \time 4/4
                 c1~\pp c4 c2.~ \(c4\< (d )\) d ( e) f-- f-- e--\breathe\! g~ |
