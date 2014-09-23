@@ -173,11 +173,15 @@ d' (b) r f ( e d) f (e) r
 \bar ":¦"
 %9
 \mark \default
-r4 r d,\p r r g r c (a) b (a)
-
-c4 ( g) r4 g (e) r g ( f8 g f e) g4 (f ) r4 ¦
+r4 r d,\p r r g r c (a) b (g) r 
+r4 r d r r g r a\downbow d g fs'8\upbow (g a b)
+\mark \default
+c4^"A" ( g) r4 g (e) r g ( f8 g f e) g4 (f ) r4 ¦
 d‘4 (b) r b (g) r f (e8 f e d) f4(e) r4¦
-
+\mark \default
+c'2.-> c-> c4 ( a) b-- c-- g (e) 
+c'2.-> c-> c4 (a) b-- c2 r4
+\bar ":¦"
 }
 
 \score {
