@@ -118,6 +118,10 @@ c'2.-> c-> c4 (a) b-- c2 r4
 
 vcII = \relative c' {
   \global
+  \repeat volta 2 {
+r4 r e\upbow r r c\upbow r r a~-> (a2) r4
+r4 r g‘\upbow r r d\upbow r r g~-> < g (c,)> r4
+}
 
 }
 
@@ -137,4 +141,3 @@ vcIII = \relative c {
   \layout {}
   \midi {}
 }
-
