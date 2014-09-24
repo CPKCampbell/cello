@@ -158,16 +158,10 @@ c2\upbow d\>\downbow < d g,> r4 d,4\pDolceDynamic^"pizz."
   \midi {}
 }
 
-%{
 
-\bookpart {
-
-global = {
-\time 3\4 \tempo 4 = 76
+vcI-2 = \relative c‘ {
+  \time 3/4 \tempo 4 = 76
 \key c\major
-}
-
-vcI = \relative c‘ {
 c4 (g) r g (e) r g ( f e ) g ( f) ¦
 d' (b) r f ( e d) f (e) r 
 \bar ":¦"
@@ -185,8 +179,14 @@ c'2.-> c-> c4 (a) b-- c2 r4
 }
 
 \score {
-  \relative c' { \clef "bass" \key c \major \time 4/4
-                c1~\pp c4 c2.~ \(c4\< (d )\) d ( e) f-- f-- e--\breathe\! g~ |
-               \( g e--\) g2 ( e4\> ) f2 ( e4\! ) r4 f2 ( e4 ) d4 ( c2) b4~ b a ( g ) f~->\upbow
-               \( f4 e\) d-- e-- f2 e-- g-- d2.\upbow ( e 4 )e2.\mark "A" \breathe g4^"Solo"\upbow
-%}
+  \new StaffGroup {
+    <<
+      \new Staff { \vcI-2 }
+%{      \new Staff { \vcII }
+      \new Staff { \vcIII }
+%} 
+   >>
+  }
+  \layout {}
+  \midi {}
+}
