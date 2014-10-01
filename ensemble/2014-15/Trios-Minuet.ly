@@ -81,6 +81,9 @@
   opus = \markup { \italic "Rudolf Matz" }
 }
 
+ub =  \upbow
+db =  \downbow
+
 global = {
   \key c \major
   \time 3/4
@@ -100,7 +103,7 @@ vcI =  \relative c' {
   \global
   \repeat  volta 2 {
   c4 (g) r g (e) r g ( f e ) g ( f)  r4 |
-d' (b) r f ( e d) f (e) r
+d' (b) r b ( g ) r f ( e d) f (e) r
   }
 %9
 \mark \default
@@ -116,15 +119,16 @@ c'2.-> c-> c4 (a) b-- c2 r4
 }
 }
 
-vcII = \relative c' {
+vcII = \relative c {
   \global
   \repeat volta 2 {
-r4 r e\upbow r r c\upbow r r a~-> (a2) r4
-r4 r g‘\upbow r r d\upbow r r g~-> < g (c,)> r4
+r4 r e\ub r r c\ub r r a~->\> a2\! r4 |
+r4 r g'\ub r r d\ub r r \tieUp g,~ ->  (< g c, >2) r4 |
 }
+\mark \default %9
+g'4\db^"Solo"\mf\> ( fs )\! r g\> ( f )\!  r g\< ( e fs ) g\> ( b d, )\! |
 
 }
-
 vcIII = \relative c {
 \global
 
@@ -141,3 +145,4 @@ vcIII = \relative c {
   \layout {}
   \midi {}
 }
+
