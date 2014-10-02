@@ -117,7 +117,7 @@ vcI =  \relative c' {
   r4 r d r r g r a\downbow d g fs8\upbow (g a b)
   \mark \default
   \repeat volta 2 {
-    c4^"A" ( g) r4 g (e) r g ( f8 g f e) g4 (f ) r4 |
+    c4^"[A]" ( g) r4 g (e) r g ( f8 g f e) g4 (f ) r4 |
     d'4 (b) r b (g) r f (e8 f e d) f4 (e) r4 |
     \mark \default
     c'2.-> c-> c4 ( a) b-- c-- g (e)
@@ -142,7 +142,19 @@ vcII = \relative c {
 }
 vcIII = \relative c {
   \global
-
+  \repeat volta 2 {
+    r4 r < g c,>\ub r r <g c,>\ub r4 d\db\< ( cs ) e\> ( d) d-.\db\! |
+    r4 r < d g,>\ub r r g-4\ub r4 c-2\db\< ( b ) d\> ( c ) c_.\!
+  }
+  r4 r c\ub\p r r b\ub R2.*2 |
+  r4 r c'\ub r r b\ub r c\db c b r r |
+  \repeat volta 2 {
+    r4 c,\mf\db\> ( c, )\! r4 c'\mf\db\> ( c, )\! r d\db\< ( cs ) e\> ( d ) d_.\! |
+    r4 d'\db\> ( g, )\!  r b\> ( g )\! r c\db-2\< ( b ) d\> ( c ) c-.\! |
+    %
+    r4^"[B]" bf\f ( c, ) r a' ( c, ) r g' ( c, ) r c' ( c, ) |
+    r4 < bf' c,>2 r4 <a c,>2 r4 <g c,>2 c4\ub ( g ) c, |
+  }
 }
 
 \score {
