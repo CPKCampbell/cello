@@ -95,17 +95,26 @@ global = {
 vcI =  \relative c' {
   \global
   \repeat  volta 2 {
-c1~\pp c4 c2.~ ( c4\< d ) d ( e ) f-- f-- e\! \breathe g~ ( g e--) g2 ( e4\> ) f2 ( e4\! ) |
-r4 f2 ( e4 ) d4 ( c2 ) b4~ b a ( g ) f~->\ub( |
-f4 e ) d-- e-- f2 e4-- g-- d2.\ub ( e4 ) |
-e2.^"[A]" \breathe g4\ub^"Solo" c ( b ) a-- g-- f2 e4-- d-- e2 c |
-d2. d'4\ub g ( fs ) e-- d-- c2 b4 ( d ) a2. ( g4 ) < g b,>1 |
-
+    c1~\pp c4 c2.~ ( c4\< d ) d ( e ) f-- f-- e\! \breathe g~ ( g e--) g2 ( e4\> ) f2 ( e4\! ) |
+    r4 f2 ( e4 ) d4 ( c2 ) b4~ b a ( g ) f~->\ub( |
+    f4 e ) d-- e-- f2 e4-- g-- d2.\ub ( e4 ) |
+    e2.^"[A]" \breathe g4\ub^"Solo" c ( b ) a-- g-- f2 e4-- d-- e2 c |
+    d2. d'4\ub g ( fs ) e-- d-- c2 b4 ( d ) a2. ( g4 ) < g b,>1 |
   }
   %21
   \mark \default
+  g4\pp\ub ( fs ) fs (e) d ( c ) c ( b ) c2 d |
+  a4-- d-- g,-- \breathe <a d>~_>\db ( q g) <a   d,>2 ( e4 ) a ( d, g ) |
+  r4\mark "[B]" c'2\ub ( b4 ) d ( c ) c ( b ) b ( a ) g ( b ) |
+  r4 d2\db e4~ e fs2 g4 a ( g ) g ( fs ) fs ( e ) d-- c-- |
+  c\ub ( b ) a-- b-- c2 b4 ( d ) <a d,>2. <b d,>4-- q2. r4 |
+  %C
+  g4\ub ( b ) e, ( g ) e ( fs ) g d'\ub^"Solo" |
+  g-4 ( fs ) e-- d-- c2 b c4-4 ( e-1 ) a,-0 ( c ) |
+  a4 ( b c ) g'\db ( e ) f2 e4 d2. ( c-- ) < c e,>1
+  \bar "|."
 
-  }
+}
 
 
 vcII = \relative c {
