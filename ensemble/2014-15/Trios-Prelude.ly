@@ -111,7 +111,7 @@ vcI =  \relative c' {
   %C
   g4\ub ( b ) e, ( g ) e ( fs ) g d'\ub^"Solo" |
   g-4 ( fs ) e-- d-- c2 b c4-4 ( e-1 ) a,-0 ( c ) |
-  a4 ( b c ) g'\db ( e ) f2 e4 d2. ( c-- ) < c e,>1
+  a4 ( b c ) g'\db ( e ) f2 e4 d2. ( c4-- ) < c e,>1
   \bar "|."
 
 }
